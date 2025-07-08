@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Приложение для обрезки изображений</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <header class="header section-offset">
+    <div class="container">
+      <h1 class="section-title">Приложение для обрезки изображений</h1>
+      <div class="btn-wrap flex">
+        <input type="file" id="fileInput" accept="image/*">
+        <button class="btn-reset btn" id="btnCrop" value="Crop">Обрезать</button>
+        <button class="btn-reset btn" id="btnRestore" value="Restore">Скачать</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section-offset image-wrap">
+      <div class="container">
+        <h2 class="image-wrap__title">Исходное изображение</h2>
+        <div>
+          <canvas id="canvas" class="canvas">
+            Your browser does not support the HTML5 canvas element.
+          </canvas>
+        </div>
+        <div>
+          <img id="image" src="#" alt="Загрузите изображение">
+        </div>
+        <h2 class="image-wrap__title">Готовое изображение</h2>
+        <div id="result" class="result"></div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>
