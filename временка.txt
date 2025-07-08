@@ -1,0 +1,2 @@
+https://www.npmjs.com/package/cropperjs
+https://products.fileformat.com/ru/image/javascript/cropper/
